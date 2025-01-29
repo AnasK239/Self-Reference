@@ -42,7 +42,7 @@ public class Main {
         animal = new Dog();
         animal.speak();
     }
-    else if (ans ==2)
+    else if (ans ==2)                        ## speak is an Animal defined method
     {
         animal = new Cat();
         animal.speak();
