@@ -1,4 +1,3 @@
-**This Repo is a self-reference some information may lack general clarity as it was written for myself.**
 # 📚 Self-Reference Knowledge Repository  
 This is a curated collection of everything I've learned from courses, projects, and personal exploration. organized and shared for anyone who wants to learn, explore.
 **The .txt files in this Repo is a self-reference some information may lack general clarity as it was written for myself.**
