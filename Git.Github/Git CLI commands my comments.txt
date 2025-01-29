@@ -1,0 +1,129 @@
+rm -rf .git/   (DELETE THE ENTIRE REPO)
+
+cd mkdir  (makes a new directory)
+
+ls -al (shows all present file in the directory)
+
+cd echo "Hello git" >> file.txt (add a text file containing the message)
+
+cd .. go back to the previous dir
+
+git init  (initialize the directory as a git directory to be tracked initial status : untracked)
+
+git status (show tracked / untracked files)                  U : symbol for untracked /  M : modified meaning git doesnt have a snapshot of the latest change
+
+git add (STAGING >> make a blob) (send to the preparation area to be of status TRACKED)
+
+git commit -m (saves a snapshot to git for VC)	Version 1.0	
+
+git ls-files (Shows all files in the index / staging area which also lets you know how many files are being tracked)
+
+git add *  (adds everything to the staging)   git add *.txt (add only all text files) etc...
+
+git ls-files -s (shows files in the staging / indexing area and also their SHA hash)
+
+git cat-file -t SHA hash  >> (tells you the type of object that has this SHA hash)  , -p (info)
+
+git log   (all commit logs)
+
+git status -s (summary of file status)
+
+git diff  (shows the difference between the WORKING TREE change and the INDEX  !!!!   but not the repository commit)
+
+git diff --staged (shows the diff between the staging area and the already commited files aka last snapshot from the repo)
+
+## The Head Points to the snapshot currently in use in the working tree !!
+
+git show  ( shows the changes done in a specified commit)
+
+git rm --cached  ( remove the tracked status of the file and make it untracked)
+
+git restore <file>  ( restores the latest version of file from the staging area / INDEX)  ( Could be used after git reset head to revert the changes )
+
+git restore --staged  (removes the latest index)
+
+git commit -am "message"  ( adds the file to the staging area and commits it at the same time)
+
+git commit --amend  ( Allows you to change the last commit message )
+
+git reset HEAD~x   ( decrements the head by x in the repo to the previous commit and reflects the snapshot in the STAGING AREA !!)
+
+git reset HEAD~x --hard   ( same as above but the snapshot reflects directly into the WORKING TREE which is your live project!!!!!!)
+
+git diff   SHA1..SHA2   (shows the diff between those two commits)
+
+git reflog  (shows the changes done to the head pointer aswell)
+
+git reset HEAD@{x}   (Fast forward the head to the x location and reflects its snapshot in the index)
+
+################## TAGGING #####################  Annotated / Light Weight
+
+git tag -a <version X> -m <your message>   (Tags your latest commit with version X and can be accessible with reference to it)
+
+git show <version X>  ( shows all information about version X)
+
+############### Git Branching ####################
+
+git branch <branch name>   ( creates an alternate branch )
+
+git branch                 ( shows all branches )
+
+git switch <branch name>   ( Moves the head to point to this branch which points to some commit) (any new commit will be added to the testing branch)
+
+git merge <branch name>    ( merges all modifications to the master branch )
+
+git branch --merge         ( shows branches that were merged into the master )
+
+git branch -d <branch name>  ( deletes branch )
+
+######## handling branch diversion  ( non-linear paths )  ## just be careful of conflicts ## merge normally and it handles it by creating a new commit node ##
+
+Rebase >> linearizes the whole branch again   while merge merely makes it seem as it has been linearized but all individual commits still hold
+
+################# Remote-Repos ##################
+
+git clone <url / network location / local location if its a local repo >  
+
+git remote               ( shows the info about the remote repo present )
+
+git remote -v           ( shows the fetch / pull from the origin repo )
+
+git merge <origin (aka remote branch) >        ( self explanatory when used in local )
+
+git fetch <remote branch name>
+
+git push  <branch name>             ( up-stream the modifications in the local branch to the remote branch ) ( BE AWARE THE BRANCH MIGHT NOT EXIST IN THE REMOTE JUST YET )
+
+git push -u <origin (remote branch)> <Local branch name>  ( This is used when you added a branch to the local but it doesnt exist in the remote so it creates a branch with the same name in the remote and pushes the local branch to it)
+
+git pull          ( downstream sync to local from the remote repo and also merges it to the working tree )
+
+git branch -vv   ( to show the tracking done to the corresponding local and remote branches )
+
+git log --oneline --all           ( shows all commits local and remote )
+
+git merge <remotename>/<branchname>
+
+add images to the readme file ![image alt](image_url)
+
+##########################
+REVERT CHANGES AND DELETE COMMIT
+##########################
+git reset --hard HEAD~1
+git push origin <branch-name> --force
+
+##########################
+REVERT CHANGES AND KEEP COMMIT
+##########################
+git revert <commit-hash>
+git push origin <branch-name>
+
+Revert Multiple Commits
+
+git revert --no-commit <commit-hash1> <commit-hash2> ...
+git commit -m "Revert multiple commits"
+git push origin <branch-name>
+
+
+
+

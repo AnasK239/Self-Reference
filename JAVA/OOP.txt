@@ -1,0 +1,19 @@
+When declaring a new class if you want to keep track of how many times this class is constructed 
+
+therefore you have to keep track by making a static int track;
+
+then track++; in the constructor ########## making it static means that it will be shared by every new instance of construction rather 
+
+than it normally being individual EX: if you create obj1 and obj2  with a static track >>> track = 2
+									
+								    obj1 and obj2 with non static track >>>> track = 1
+
+Its better to access the static variable through the class name rather than the objects in it
+
+			ClassName.track
+
+STATIC:
+
+OWNED BY THE CLASS
+
+SHARED BY THE CLASS OBJECTS

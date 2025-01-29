@@ -1,0 +1,56 @@
+####### Aggregation in Java is a type of association that represents a "has-a" relationship between objects,
+where one object (the whole) contains another object (the part).
+The key characteristic of aggregation is that the part can exist independently of the whole.
+This means the lifecycle of the part is not controlled by the whole—if the whole is destroyed,
+the part may still exist.
+
+For example a Library has Books   ,, But Books can exist without a Library
+
+So aggregation Represents a "has-a" Relationship between objects.
+
+One object contains another object as part of its structure.
+
+######### Composition
+
+Composition in Java is a fundamental object-oriented programming (OOP) concept that establishes a "whole-part" relationship between classes.
+It enforces a strong dependency where the lifecycle of the "part" (child object) is tightly controlled by the "whole" (parent object).
+If the parent is destroyed, the child objects are also destroyed. Composition models a strict "has-a" relationship and is often used to design modular, reusable, and maintainable systems.
+
+EX:
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Car car = new Car("Mustang", 2024, "v10");
+
+        System.out.println(car.model+" "+car.year+" "+car.engine.type);  note that we used .type to access the actual string
+												that is because engine is a constructed object from Engine class
+												which returns a reference.
+    }
+}
+
+public class Car {
+
+    String model;
+    int year;
+    Engine engine;
+
+    Car(String model,int year, String engineType)
+    {
+        this.model = model;
+        this.year = year;
+        this.engine = new Engine(engineType); !!!!!!!!!!!!!!! >> engine variable = reference to Engine object
+											however we want the actual string engineType.
+
+    }
+}
+
+public class Engine {
+
+    String type;
+
+    Engine (String type)
+    {
+        this.type=type;
+    }
+}

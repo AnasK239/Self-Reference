@@ -1,0 +1,29 @@
+After making a new class if you want another class to inherit its attributes Ex: CLASS ANIMALS   ,, NEW CLASS CAT Should inherit animals properties
+
+
+syntax when forming the new class
+
+public class <child class> extends <parent class from which attributes and methods are inherited>{
+    
+}
+
+
+
+The Parent Class could be refered to as super the child inherits attributes from the super:
+
+if the super constructor requires 2 arguments  EX:  Parent(a1,a2)
+
+and the child constructor requires 3 arguments  child(a1,a2,a3)
+						
+						you must provide the first two arguments to the Parent first 
+
+						Syntax  ,  super(a1,a2) , then the last argument can be provided to the child
+
+							, ,  this.a3 
+
+						Note ## a1,a2 are still accesible to any methods in the child class using this.<aX>
+
+##########
+
+Method overriding is defining the same method inherited by the child inside the child itself with different parameters.
+The overriden method is used when using child.method
