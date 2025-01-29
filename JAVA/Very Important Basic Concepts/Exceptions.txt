@@ -1,0 +1,32 @@
+Exception = An event that interrupts the normal flow of a program
+(Dividing by zero, file not found, mismatch input type)
+Surround any dangerous code with a try{} block
+try{}, catch{}, finally{}
+
+
+ Note:
+
+When catching Exceptions if you want a safety net to handle any unkown exception use catch(Exception e)
+															{ sout "Something went wrong" }
+######### Method 1.
+try{
+		// block of code
+}
+catch(//ExceptionType){
+		// Do this in case of exception
+}
+finally{
+		// Close any open resources for example a scanner
+}
+
+######### Method 2. >>> try with resources
+
+try( Scanner scanner = new Scanner(System.in) ){
+			// Block of code 				
+}
+catch(//ExceptionType){
+		// Do this in case of exception
+}
+finally{
+		// resources are automatically closed within this block no need to manually do it
+}
