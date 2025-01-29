@@ -1,0 +1,6 @@
+(3 options)
+
+1. BufferedReader + FileReader: Best for reading text files line-by-line
+2. FileInputStream: Best for binary files (e.g., images, audio files)
+3. RandomAccessFile: Best for read/write specific portions of a large file
+

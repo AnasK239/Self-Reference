@@ -1,0 +1,37 @@
+Wrapper classes = "Allow primitive values (int, char, double, boolean) to be used as objects."Wrap them in an object" Generally,
+don't wrap primitives unless you need an object.
+
+Allows use of Collections Framework and static Utility Methods."
+
+
+// AutoBoxing  ( Wrapping the object )
+
+Ex:  Integer a = 123;     >> Be careful this is not a primitive type (int) this is an object from class (Integer)
+
+// Unboxing    ( Unwrapping the object )
+
+	int b = a;   >> b is now a primitive type int with the value assigned to a wich is 123.
+
+#### Disclaimer: if you try to return or use an object you will get a reference value instead of the desired output
+
+#### There is an object class and a primitive type for everything except String wich only has Object
+
+**** here's what you can do with wrapper classes and why its useful ****
+
+#### convert an integer to a string >> String a = Integer.toString(123)  ( wraps the transformed-to string Integer object in a String object )
+
+>>> This can allow you to Wrap multiple objects as strings a ,b ,c ,d and concatenate them together String x = a + b + c
+
+Even though they are all of different types deep down ( Boolean , int ,double , etc .. ) 
+
+#### convert a string to and integer or boolean or anything else using Parsing
+
+>>> int a = Integer.parseInt("123");   >> a is now a primitive type integer (aka a normal variable number ready to be used);
+
+>>> char c = "Pizza".charAt(0); etc.....
+
+#### Using object functions to determine validity
+
+>>> char c = 'b'
+
+>>> Character.isLetter(c) >>>> returns a boolean to indicate if its actually a letter or not.

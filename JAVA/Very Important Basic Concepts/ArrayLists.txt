@@ -1,0 +1,15 @@
+If you know c++ this is just a vector ,, a vector is just a resizable array
+
+
+### Array Lists Store OBJECTS
+
+
+Array <OBJECT TYPE> (array name) = new ArrayList <>();
+
+Methods
+
+.add()  , .remove() , .set(index , "whatever you want") , .get(index) , .size() , Collections.sort(<array name>) (collections utillity needs to be imported first)
+
+you can print the array list immediately  sout(<arrayname>).
+
+or iterate through it and print every one indvidually.

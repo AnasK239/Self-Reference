@@ -1,0 +1,24 @@
+You have 4 options
+
+1. FileWriter: Good for small or medium-sized text files.
+
+2. BufferedReader: Better performance for large amounts of text.
+
+3. PrintWriter: Best for structured data, like reports or logs.
+
+4. FileOutputStream: Best for binary files (e.g., images, audio files).
+
+
+Writing files is inherently dangerous behaviour so we need to catch exceptions::
+
+        try (FileWriter writer = new FileWriter("Location\\test.txt");) { **note when adding location use \\ not \ 
+												  you can also replace what's inside FileWriter() with a String object
+
+            writer.write("I like onion rings");
+            
+        } catch (IOException e) {
+
+            System.out.println("Couldn't write file");
+        }
+
+This will output a .txt file containing your message.
