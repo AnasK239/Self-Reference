@@ -31,7 +31,7 @@ This repository is open to contributions! If you’d like to add something valua
 
 ## 📬 Connect with Me  
 If you have questions, feedback, or just want to chat about learning, feel free to reach out:  
-- [LinkedIn](#https://www.linkedin.com/in/anas-khaled-b47538267/)    
+- [LinkedIn](https://www.linkedin.com/in/anas-khaled-b47538267/)    
 
 ---
 
