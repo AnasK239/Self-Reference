@@ -1,0 +1,34 @@
+A very important point is that by using interfaces a class can have many parents and inherit their attributes.
+Unlike normal inheritance where a class can only have one parent.
+									
+									(Multiple inheritance-like behaviour)
+
+## If a class inherits from an interface it MUST finish defining the methods in the interface.
+
+
+public class <class name> implements <interface name> {      "Think of it like this : the class implements a blue-print 
+																defined by the interface"
+	 @Override
+    public void <blue print method name>()
+    {
+        // finish implementation
+    }
+}
+
+#################### MULTIPLE INTERFACES ##################
+
+public class <class name> implements <interface name1 , interface name2> {      "Think of it like this : Some animals considered prey
+												 	and predators at the same time so they implement both blue prints"
+																
+	 @Override
+    public void <blue print method name1>()
+    {
+        // finish implementation
+    }
+
+	@Override
+    public void <blue print method name2>()
+    {
+        // finish implementation
+    }
+}

@@ -1,0 +1,11 @@
+Great introduction to java disclaimer (12hrs) (lacks JavaFX) >> https://www.youtube.com/watch?v=xTtL8E4LzTQ&list=PLMNld7Ie2nHMaNb7AGev-7qxEG1Ki9ar-&index=6
+
+Readable Material course + JavaFX >> https://java-programming.mooc.fi/
+
+JavaFX only     >> https://www.youtube.com/playlist?list=PLZPZq0r_RZOM-8vJA3NQFZB7JroDcMwev
+
+MasterClass Course (Very Advanced) >> https://www.udemy.com/course/java-the-complete-java-developer-course/?couponCode=ST16MT28125AROW#instructor-1
+
+Another JavaFX resource >> https://www.youtube.com/playlist?list=PLrzWQu7Ajpi26jZvP8JhEJgFPFEj_fojO
+
+All MaharaTech Java Courses >> https://maharatech.gov.eg/course/index.php?categoryid=306
