@@ -1,0 +1,24 @@
+Anonymous class = A class that doesn't have a name. Cannot be reused.
+
+Add custom behavior without having to create a new class.
+
+Often used for one time uses (TimerTask, Runnable, callbacks).
+
+
+Used when you want to make an object of a certain class but its has a slightly different method.
+Therfore it would be redundant to go and define a new class just for this one object instead create the new object as an annonymous class.
+
+Ex:  Assume a Class called Dog , when Dog speaks it says woof  , Assume we want a Dog object scooby-doo , scooby-doo talks english.
+
+so we need to override the speak method of dog
+
+>>> Dog dog1 = new Dog(); >>> this is a normal dog >>> dog1.speak()  = woof
+
+>>> Dog scoobyDoo = new Dog() 
+{	
+	@Override
+	void speak()
+	{
+		System.out.println("english mumble");
+	}
+} >>> this is scooby-Doo >>> scoobyDoo.speak() = english mumble

@@ -1,0 +1,43 @@
+Generics = A concept where you can write a class, interface, or method
+	     that is compatible with different data types.
+	     <T> type parameter (placeholder that gets replaced with a real type)
+	     <String> type argument (specifies the type)
+
+Basically its writing the logic of how something works and leaving the data type to be determined later.
+
+Ex:1 
+
+public class Box<T> {
+
+    T item;
+
+    public void setItem(T item) {
+        this.item = item;					IN MAIN >> Box<String> box = new Box<>();
+ 	}
+	public T getItem() {
+        return this.item;						box.setItem("banana");
+	}
+										System.out.println(box.getItem())
+    
+}
+
+
+Ex:2 >> Multiple place holders
+
+public class Product<T, U> {
+
+    T item;
+    U price;
+
+    Product(T item, U price) {
+        this.item = item;
+        this.price = price;
+    }
+}
+
+In MAIN >>  
+
+Product<String, Double> product1 = new Product<>("apple", 0.50);
+Product<String, Integer> product2 = new Product<>("ticket", 15);
+System.out.println(product2.getPrice());
+
