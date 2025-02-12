@@ -63,5 +63,3 @@ abstract class Vehicle {
 In this case, `start()` is a concrete method that **all child classes inherit** as-is.
 
 ---
-
-This Markdown version makes the content **structured, readable, and well-formatted** for technical documentation or learning purposes. Let me know if you need any modifications!
