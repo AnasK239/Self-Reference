@@ -26,7 +26,7 @@ Composition is a fundamental object-oriented programming (OOP) concept that esta
 * Used to design modular, reusable, and maintainable systems
 
 ### Implementation Example
-
+- Just a heads up, when looking at any code snippet try to skip the Main and get a sense for defined classes first
 ```java
 public class Main {
     public static void main(String[] args) {
