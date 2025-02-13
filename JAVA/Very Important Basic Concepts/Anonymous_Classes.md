@@ -16,7 +16,7 @@ Instead of defining a new class for **just one object**, you can use an **anonym
 ---
 ## Example
 
-Consider that created a `Dog` class. Normally, when a `Dog` speaks, it says `"woof"`.
+Suppose that we have created a `Dog` class. Normally, when a `Dog` speaks, it says `"woof"`.
 However, we want to create a `Dog` object named **Scooby-Doo**, which speaks English.
 
 ### Normal Class Object:
