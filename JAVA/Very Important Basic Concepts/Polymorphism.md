@@ -26,7 +26,7 @@ The method executed is determined at **runtime** based on user input.
 ### Example: Animal Shelter
 Assume an abstract class Animal  which has two children either a dog or a cat , suppose this is an animal rescue shelter.
 
-The user will have to choose wether they take a cat home or a dog.
+The user will have to choose wether they take a cat or a dog home.
 
 If the cat is picked it says MEOW  ,, if the dog is picked it says woof. 
 
