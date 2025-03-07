@@ -46,3 +46,34 @@ In Object-Oriented Programming (OOP), relationships between objects are importan
 | **Symbol in UML** | Simple line | Hollow diamond | Filled diamond |
 | **Dependency** | No dependency | Child can exist independently | Child cannot exist independently |
 | **Example** | Teacher teaches Student | Student has Address | Student has Name |
+
+---
+## Classes Represented in Java
+
+```java
+Aggregated Class (Name)
+
+public class Name {
+    ...
+}
+```
+```java
+Aggregated Class (Address)
+java
+Copy
+Edit
+public class Address {
+    ...
+}
+```
+
+The aggregated classes are usually represented as data fields in aggregating class.
+```java
+Aggregating Class (Student)
+
+public class Student {
+    private Name name;
+    private Address address;
+    ...
+}
+```
