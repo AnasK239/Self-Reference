@@ -1,5 +1,3 @@
-Tuples are one of the core data structures in Python, and they’re especially useful for storing an ordered collection of items that should not change throughout the program. Below is a detailed introduction to tuples for a first-time learner, including their definitions, key characteristics, common functions, and some neat tricks and best practices.
-
 ---
 
 ## 1. What Is a Tuple?
