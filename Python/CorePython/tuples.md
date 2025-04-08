@@ -1,4 +1,3 @@
----
 
 ## 1. What Is a Tuple?
 
